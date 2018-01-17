@@ -1,3 +1,5 @@
+import { TaskModule } from './task/task.module';
+import { ProjectModule } from './project/project.module';
 import { LoginModule } from './login/login.module';
 import { AppRoutingModule } from './app.routing.module';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -19,6 +21,8 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     LoginModule,
+    ProjectModule,
+    TaskModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

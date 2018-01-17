@@ -1,4 +1,3 @@
-import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ShareModule } from './../share/share.module';
 import { NgModule, SkipSelf, Optional } from '@angular/core';
@@ -13,7 +12,6 @@ import { loadSvgResources } from './../utils/svg.util';
   imports: [
     BrowserAnimationsModule,
     ShareModule,
-    HttpClientModule,
   ],
   declarations: [
     HeaderComponent,
