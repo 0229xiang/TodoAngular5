@@ -1,7 +1,7 @@
+import { ShareModule } from './share/share.module';
 import { TaskModule } from './task/task.module';
 import { ProjectModule } from './project/project.module';
 import { LoginModule } from './login/login.module';
-import { AppRoutingModule } from './app.routing.module';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { CoreModule } from './core/core.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -17,12 +17,11 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     CoreModule,
-    MatSidenavModule,
     BrowserAnimationsModule,
-    AppRoutingModule,
     LoginModule,
     ProjectModule,
     TaskModule,
+    ShareModule
   ],
   providers: [],
   bootstrap: [AppComponent]
