@@ -13,7 +13,7 @@ export class CopyTaskComponent implements OnInit {
     private dialogRef: MatDialogRef<CopyTaskComponent>) { }
 
   ngOnInit() {
-    this.lists = this.data.lists
+    this.lists = this.data.lists;
   }
 
 }

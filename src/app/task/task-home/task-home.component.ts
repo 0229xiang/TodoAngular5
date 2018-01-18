@@ -1,3 +1,4 @@
+import { NewTaskListComponent } from './../new-task-list/new-task-list.component';
 import { ConfirmDialogComponent } from './../../share/confirm-dialog/confirm-dialog.component';
 import { CopyTaskComponent } from './../copy-task/copy-task.component';
 import { NewTaskComponent } from './../new-task/new-task.component';
@@ -92,4 +93,11 @@ export class TaskHomeComponent implements OnInit {
   launchDeleteTaskDialog() {
     this.dialog.open(ConfirmDialogComponent, { data: { title: '删除任务', content: '删除当前任务，将不再恢复使用' } });
   }
+
+  launchEditTaskDialog() {
+     this.dialog.open(NewTaskListComponent, { data: { title: '更改列表名称' } });
+  }
+launchNewListDialog() {
+  this.dialog.open(NewTaskListComponent, { data: { title: '新建列表' } });
+}
 }

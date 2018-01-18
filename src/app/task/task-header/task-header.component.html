@@ -2,8 +2,8 @@
   <div>
     <h3>{{header}}</h3>
   </div>
-  <div mat-button class="fill">
-    <mat-icon (click)="onNewTaskClick()">add_circlec_outline</mat-icon>
+  <div mat-button class="fill" (click)="onNewTaskClick()">
+    <mat-icon>add_circlec_outline</mat-icon>
     <span>新任务</span>
   </div>
   <div>
@@ -13,7 +13,7 @@
   </div>
 </div>
 <mat-menu #menu="matMenu">
-<button mat-menu-item>
+<button mat-menu-item (click)="onEditListClick()">
   <mat-icon>mode_edit</mat-icon>
   <span>修改列表名称</span>
 </button>

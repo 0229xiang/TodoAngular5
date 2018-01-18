@@ -7,7 +7,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material';
 import { loadSvgResources } from './../utils/svg.util';
-
+import 'hammerjs';
 @NgModule({
   imports: [
     BrowserAnimationsModule,
