@@ -1,7 +1,8 @@
+import { DirectiveModule } from './../directive/directive.module';
 import { AppRoutingModule } from './../app.routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common'; // 提供ngif ngfor...
 import {
   MatToolbarModule,
   MatIconModule,
@@ -50,6 +51,7 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
     MatSelectModule,
     MatSidenavModule,
     AppRoutingModule,
+    DirectiveModule,
   ],
   exports: [
     CommonModule,
@@ -74,6 +76,7 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
     MatSelectModule,
     MatSidenavModule,
     AppRoutingModule,
+    DirectiveModule
   ],
   declarations: [ConfirmDialogComponent],
   entryComponents: [ConfirmDialogComponent]

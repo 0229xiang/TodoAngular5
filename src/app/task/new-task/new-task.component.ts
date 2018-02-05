@@ -1,11 +1,12 @@
 import { MAT_DIALOG_DATA } from '@angular/material';
-import { Component, OnInit, ViewEncapsulation, Inject } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Inject, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-new-task',
   templateUrl: './new-task.component.html',
   styleUrls: ['./new-task.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.Default
 })
 export class NewTaskComponent implements OnInit {
   title: string;

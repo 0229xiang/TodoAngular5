@@ -5,6 +5,8 @@
     'priority-emergency': item.priority === 1
   }"
   [@item]="widerPriority"
+  [appDrag]="true"
+  [draggedClass]="'drag-start'"
   (click)="onItemClick()">
   <mat-checkbox
    [checked]="item.completed"

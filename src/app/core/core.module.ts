@@ -22,6 +22,12 @@ import 'hammerjs';
     HeaderComponent,
     FooterComponent,
     SidebarComponent
+  ],
+  providers: [
+    {
+      provide: 'BASE_CONFIG',
+      useValue: 'http://localhost:4200'
+    }
   ]
 })
 
